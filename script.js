@@ -12,7 +12,6 @@ let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
 function updateLocalStorage() {
   localStorage.setItem('transactions', JSON.stringify(transactions));
 }
-
 function updateValues() {
   const amounts = transactions.map(t => t.amount);
   const total = amounts.reduce((acc, item) => acc + item, 0).toFixed(2);
