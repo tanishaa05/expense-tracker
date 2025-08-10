@@ -42,7 +42,6 @@ function addTransactionDOM(transaction) {
   `;
   list.appendChild(item);
 }
-
 form.addEventListener('submit', e => {
   e.preventDefault();
   if (text.value.trim() === '' || amount.value.trim() === '') return;
