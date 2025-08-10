@@ -23,7 +23,6 @@ function updateValues() {
   income.innerText = `₹${incomeTotal}`;
   expense.innerText = `₹${expenseTotal}`;
 }
-
 function removeTransaction(id) {
   transactions = transactions.filter(t => t.id !== id);
   updateLocalStorage();
