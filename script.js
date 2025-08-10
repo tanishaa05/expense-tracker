@@ -8,7 +8,6 @@ const amount = document.getElementById('amount');
 const toggleTheme = document.getElementById('toggle-theme');
 
 let transactions = JSON.parse(localStorage.getItem('transactions')) || [];
-
 function updateLocalStorage() {
   localStorage.setItem('transactions', JSON.stringify(transactions));
 }
